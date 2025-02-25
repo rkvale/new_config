@@ -1,0 +1,134 @@
+
+#!/nix/store/fd118hwh7d1ncib4mdw56ylv3g9k0iyj-bash-5.2p37/bin/bash
+### This file was generated with Nix. Don't modify this file directly.
+
+### SHELL VARIABLES ###
+export CLUTTER_BACKEND="wayland"
+export GDK_BACKEND="wayland"
+export QT_QPA_PLATFORM="wayland"
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
+export SDL_VIDEODRIVER="wayland"
+export XDG_CURRENT_DESKTOP="river"
+
+### CONFIGURATION ###
+riverctl border-width 2
+riverctl declare-mode passthrough
+riverctl focus-follows-cursor normal
+riverctl hide-cursor timeout 5000
+riverctl hide-cursor when-typing enabled
+riverctl input 'pointer-*' accel-profile flat
+riverctl input 'pointer-*' pointer-accel -0.5
+riverctl input 'pointer-1133-16489-Logitech_MX_Master_2S' pointer-accel 1.0
+riverctl input 'pointer-1739-52745-SYNA30D3:00_06CB:CE09' pointer-accel 0
+riverctl input 'pointer-1739-52745-SYNA30D3:00_06CB:CE09' tap enabled
+riverctl keyboard-layout -options caps:swapescape no
+riverctl map locked None XF86AudioLowerVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
+riverctl map locked None XF86AudioMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'
+riverctl map locked None XF86AudioRaiseVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+'
+riverctl map locked None XF86MonBrightnessDown spawn 'xbacklight -dec 10'
+riverctl map locked None XF86MonBrightnessUp spawn 'xbacklight -inc 10'
+riverctl map normal None XF86AudioLowerVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
+riverctl map normal None XF86AudioMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'
+riverctl map normal None XF86AudioRaiseVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+'
+riverctl map normal None XF86MonBrightnessDown spawn 'xbacklight -dec 10'
+riverctl map normal None XF86MonBrightnessUp spawn 'xbacklight -inc 10'
+riverctl map normal Super 0 set-focused-tags 4294967295
+riverctl map normal Super 1 set-focused-tags 1
+riverctl map normal Super 2 set-focused-tags 2
+riverctl map normal Super 3 set-focused-tags 4
+riverctl map normal Super 4 set-focused-tags 8
+riverctl map normal Super 5 set-focused-tags 16
+riverctl map normal Super 6 set-focused-tags 32
+riverctl map normal Super 7 set-focused-tags 64
+riverctl map normal Super 8 set-focused-tags 128
+riverctl map normal Super 9 set-focused-tags 256
+riverctl map normal Super C close
+riverctl map normal Super Comma focus-output left
+riverctl map normal Super D send-layout-cmd rivertile 'main-count -1'
+riverctl map normal Super E spawn 'kitty --single-instance --instance-group river -e hx'
+riverctl map normal Super H send-layout-cmd rivertile 'main-ratio -0.05'
+riverctl map normal Super I send-layout-cmd rivertile 'main-count +1'
+riverctl map normal Super J focus-view next
+riverctl map normal Super K focus-view previous
+riverctl map normal Super L send-layout-cmd rivertile 'main-ratio +0.05'
+riverctl map normal Super M toggle-fullscreen
+riverctl map normal Super P spawn 'riverctl spawn "$(tofi-drun)"'
+riverctl map normal Super Period focus-output right
+riverctl map normal Super Return spawn 'kitty --single-instance --instance-group river'
+riverctl map normal Super Space toggle-float
+riverctl map normal Super Tab focus-previous-tags
+riverctl map normal Super+Alt H move left 100
+riverctl map normal Super+Alt J move down 100
+riverctl map normal Super+Alt K move up 100
+riverctl map normal Super+Alt L move right 100
+riverctl map normal Super+Alt+Shift H resize horizontal -100
+riverctl map normal Super+Alt+Shift J resize vertical +100
+riverctl map normal Super+Alt+Shift K resize vertical -100
+riverctl map normal Super+Alt+Shift L resize horizontal +100
+riverctl map normal Super+Control 0 toggle-focused-tags 4294967295
+riverctl map normal Super+Control 1 toggle-focused-tags 1
+riverctl map normal Super+Control 2 toggle-focused-tags 2
+riverctl map normal Super+Control 3 toggle-focused-tags 4
+riverctl map normal Super+Control 4 toggle-focused-tags 8
+riverctl map normal Super+Control 5 toggle-focused-tags 16
+riverctl map normal Super+Control 6 toggle-focused-tags 32
+riverctl map normal Super+Control 7 toggle-focused-tags 64
+riverctl map normal Super+Control 8 toggle-focused-tags 128
+riverctl map normal Super+Control 9 toggle-focused-tags 256
+riverctl map normal Super+Shift 0 set-view-tags 4294967295
+riverctl map normal Super+Shift 1 set-view-tags 1
+riverctl map normal Super+Shift 2 set-view-tags 2
+riverctl map normal Super+Shift 3 set-view-tags 4
+riverctl map normal Super+Shift 4 set-view-tags 8
+riverctl map normal Super+Shift 5 set-view-tags 16
+riverctl map normal Super+Shift 6 set-view-tags 32
+riverctl map normal Super+Shift 7 set-view-tags 64
+riverctl map normal Super+Shift 8 set-view-tags 128
+riverctl map normal Super+Shift 9 set-view-tags 256
+riverctl map normal Super+Shift Comma send-to-output -current-tags left
+riverctl map normal Super+Shift D spawn 'makoctl dismiss -a'
+riverctl map normal Super+Shift J swap next
+riverctl map normal Super+Shift K swap previous
+riverctl map normal Super+Shift L spawn 'waylock -ignore-empty-password -init-color 0x112c52 -input-color 0x1c135c -fail-color 0x5c131d'
+riverctl map normal Super+Shift Period send-to-output -current-tags right
+riverctl map normal Super+Shift Q spawn 'systemctl stop --user river-session.target && riverctl exit'
+riverctl map normal Super+Shift S spawn 'slurp | grim -g - ~/Screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')'
+riverctl map normal Super+Shift+Control 0 toggle-view-tags 4294967295
+riverctl map normal Super+Shift+Control 1 toggle-view-tags 1
+riverctl map normal Super+Shift+Control 2 toggle-view-tags 2
+riverctl map normal Super+Shift+Control 3 toggle-view-tags 4
+riverctl map normal Super+Shift+Control 4 toggle-view-tags 8
+riverctl map normal Super+Shift+Control 5 toggle-view-tags 16
+riverctl map normal Super+Shift+Control 6 toggle-view-tags 32
+riverctl map normal Super+Shift+Control 7 toggle-view-tags 64
+riverctl map normal Super+Shift+Control 8 toggle-view-tags 128
+riverctl map normal Super+Shift+Control 9 toggle-view-tags 256
+riverctl map-pointer normal Super BTN_LEFT move-view
+riverctl map-pointer normal Super BTN_MIDDLE toggle-float
+riverctl map-pointer normal Super BTN_RIGHT resize-view
+riverctl map-switch locked lid close spawn 'wlr-randr --output eDP-1 --off'
+riverctl map-switch locked lid open spawn 'wlr-randr --output eDP-1 --on'
+riverctl map-switch normal lid close spawn 'wlr-randr --output eDP-1 --off'
+riverctl map-switch normal lid open spawn 'wlr-randr --output eDP-1 --on'
+riverctl map-switch passthrough lid close spawn 'wlr-randr --output eDP-1 --off'
+riverctl map-switch passthrough lid open spawn 'wlr-randr --output eDP-1 --on'
+riverctl rule-add ssd
+riverctl rule-add -app-id Slack tags 4
+riverctl rule-add -app-id 1Password tags 8
+riverctl rule-add -app-id bruno tags 16
+riverctl set-cursor-warp on-output-change
+riverctl set-repeat 60 300
+riverctl spawn 'waybar'
+riverctl spawn 'slack'
+riverctl spawn '1password'
+riverctl spawn 'wl-paste -w /nix/store/644nkn7c0pvd5x62i5m2dm9ss9c8rx2i-xclip-0.13/bin/xclip -selection clipboard'
+riverctl xcursor-theme Bibata-Modern-Amber 16
+
+### EXTRA CONFIGURATION ###
+riverctl default-layout rivertile
+riverctl spawn rivertile
+
+
+### SYSTEMD INTEGRATION ###
+/nix/store/0mr2annxs94qbs8l0rcmkd5b4mbnbc2h-dbus-1.14.10/bin/dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP NIXOS_OZONE_WL XCURSOR_THEME XCURSOR_SIZE && systemctl --user stop river-session.target && systemctl --user start river-session.target
