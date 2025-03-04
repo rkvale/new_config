@@ -15,7 +15,8 @@
   boot.loader.grub.device = "/dev/vda";
   boot.loader.grub.useOSProber = true;
 
-  networking.hostName = "donald"; # Define your hostname.
+  #Flyttet til hardware-configuration.nix 
+  # networking.hostName = "donald"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
