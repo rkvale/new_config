@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hosts/donald/hardware-configuration.nix
+      # ./hosts/donald/hardware-configuration.nix
     ];
 
   # Bootloader.
@@ -18,7 +18,8 @@
   #Flyttet til hardware-configuration.nix 
   # networking.hostName = "donald"; # Define your hostname.
 
-
+  # Adding flake
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
