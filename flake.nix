@@ -17,7 +17,7 @@
             inherit inputs;
           };
           modules = [
-            ./nixos
+            ./configuration.nix
             ./hosts/${host}
           ];
         }
