@@ -23,7 +23,6 @@
           modules = [
             ./configuration.nix
             ./hosts/${host}
-            # ./hosts/donald
           ];
         }
       );
