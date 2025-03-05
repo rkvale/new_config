@@ -1,7 +1,7 @@
 {
-  description = "en liten test";
+  description = "A very basic flake";
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
   outputs =
     inputs:
@@ -23,6 +23,7 @@
           modules = [
             ./configuration.nix
             ./hosts/${host}
+            # ./hosts/donald
           ];
         }
       );
